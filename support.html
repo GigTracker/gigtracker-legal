@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — GigTracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #1dc864;
+    --bg: #0e0e0e;
+    --card: #181818;
+    --border: #2a2a2a;
+    --text: #f0f0f0;
+    --muted: #888;
+    --radius: 14px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 16px;
+    padding: 0 20px 80px;
+  }
+
+  header {
+    max-width: 680px;
+    margin: 60px auto 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+    background: var(--green);
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+  }
+
+  .app-name { font-size: 22px; font-weight: 600; color: var(--text); }
+  .app-sub { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+  main { max-width: 680px; margin: 0 auto; }
+
+  .intro {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 40px;
+    color: #ccc;
+    font-size: 15px;
+  }
+
+  section { margin-bottom: 40px; }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 .num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--green);
+    background: rgba(29,200,100,0.1);
+    border: 1px solid rgba(29,200,100,0.2);
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-weight: 500;
+  }
+
+  .faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    margin-bottom: 12px;
+  }
+
+  .faq-q {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .faq-a {
+    font-size: 14px;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .contact-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .contact-box p { color: var(--muted); font-size: 15px; margin-bottom: 16px; }
+
+  .email-btn {
+    display: inline-block;
+    background: var(--green);
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+  footer {
+    max-width: 680px;
+    margin: 60px auto 0;
+    text-align: center;
+    font-size: 12px;
+    color: #444;
+    font-family: 'DM Mono', monospace;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="icon">⚡</div>
+  <div>
+    <div class="app-name">GigTracker</div>
+    <div class="app-sub">Support</div>
+  </div>
+</header>
+
+<main>
+
+  <div class="intro">
+    Need help with GigTracker? Browse the FAQs below or reach out directly — we typically respond within 24 hours.
+  </div>
+
+  <section>
+    <h2><span class="num">01</span> Getting started</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I log a shift?</div>
+      <p class="faq-a">Tap the Shifts tab at the bottom of the app, then tap the + button in the top right. Enter your start time, end time, platform, and earnings. Tap Save to record the shift.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I track mileage?</div>
+      <p class="faq-a">When logging a shift, tap Start GPS Tracking to automatically record your mileage. Make sure you allow location access when prompted. You can also enter mileage manually.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I change my name on the dashboard?</div>
+      <p class="faq-a">Tap the gear icon on the dashboard to open Settings. Under Account, tap the Your name field and type your name. It will update on the dashboard immediately.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> Expenses &amp; tax</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I log an expense?</div>
+      <p class="faq-a">Tap the Expenses tab, then tap + to add a new expense. Enter the amount, category (fuel, phone, maintenance, etc.), and date. Expenses are automatically factored into your tax estimates.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How does the tax estimate work?</div>
+      <p class="faq-a">GigTracker estimates your self-employment tax based on your total earnings minus deductible expenses. It uses the current IRS self-employment tax rate. This is an estimate only — consult a tax professional for official advice.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">What is the real hourly rate?</div>
+      <p class="faq-a">Your real hourly rate is your total earnings divided by total hours worked across all shifts. It gives you a true picture of what you're actually making per hour after factoring in all time on the road.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> Data &amp; account</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I delete all my data?</div>
+      <p class="faq-a">Go to Settings (gear icon on the dashboard) → scroll to Data Management → tap Clear All Data. This permanently deletes all your shifts and expenses from the app and our servers.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">Is my data backed up?</div>
+      <p class="faq-a">Yes. Your shifts and expenses are securely synced to the cloud so you won't lose data if you switch phones or reinstall the app.</p>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">How do I cancel my subscription?</div>
+      <p class="faq-a">Subscriptions are managed by Apple. Go to your iPhone Settings → tap your name → Subscriptions → find GigTracker → tap Cancel Subscription.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> Contact us</h2>
+    <div class="contact-box">
+      <p>Can't find what you're looking for? Send us an email and we'll get back to you within 24 hours.</p>
+      <a href="mailto:gigtracker@proton.me" class="email-btn">gigtracker@proton.me</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 GigTracker · <a href="privacy-policy.html" style="color:#444">Privacy Policy</a></footer>
+
+</body>
+</html>
